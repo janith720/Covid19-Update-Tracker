@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="./images/virus.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Covid19 Update Tracker</title>
+</head>
+<body>
+
+    <header>
+        <p>Covid19 <span> Live</span> Update</p>
+        <ul class="tabs">
+            <li data-tab-target="#local" class="active tab"><img src="./images/srilanka.png" alt="Sri Lanka"></li>
+            <li data-tab-target="#global" class="tab"><img src="./images/global.png" alt="Global"></li>
+        </ul>
+
+    </header>
+    
+    <div class="tab-content">
+        <div id="local" data-tab-content class="active">
+            <p id="ActiveTabtitle">Sri Lanka</p>
+            <p id="date">Last Updated at: <span id="timendate"></span></p>
+            <div class="con">
+                <div class="box1">
+                    <p>Total Confirmed Cases</p>
+                    <p id="LTotalCases">0</p>
+                </div>
+                <div class="box2">
+                    <p>New Cases</p>
+                    <p id="LNewCases"></p>
+                </div>
+                <div class="box3">
+                    <p>New Deaths</p>
+                    <p id="LNewDeaths"></p>
+                </div>
+                <div class="div2">
+                    <div class="box4">
+                        <p>Recovered</p>
+                        <p id="LRecovered"></p>
+                    </div>
+                    <div class="box5">
+                        <p>Total Deaths</p>
+                        <p id="LTotalDeaths"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="global" data-tab-content>
+            <p id="ActiveTabtitle">Global</p>
+            <p id="date">Last Updated at: <span id="Gtimendate"></span></p>
+            <div class="con">
+                <div class="box1">
+                    <p>Total Confirmed Cases</p>
+                    <p id="GTotalCases"></p>
+                </div>
+                <div class="box2">
+                    <p>New Cases</p>
+                    <p id="GNewCases"></p>
+                </div>
+                <div class="box3">
+                    <p>New Deaths</p>
+                    <p id="GNewDeaths"></p>
+                </div>
+                <div class="div2">
+                    <div class="box4">
+                        <p>Recovered</p>
+                        <p id="GRecovered"></p>
+                    </div>
+                    <div class="box5">
+                        <p>Total Deaths</p>
+                        <p id="GTotalDeaths"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="source">
+        Source: https://hpb.health.gov.lk
+    </p>
+    <script src="main.js"></script>
+</body>
+</html>
